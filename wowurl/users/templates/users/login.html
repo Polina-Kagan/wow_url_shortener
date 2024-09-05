@@ -1,0 +1,17 @@
+{% extends 'users/base.html' %}
+<!-- freeze -->
+{% block content %}
+<div class="login">
+  <h1>LogIn Page</h1>
+  <p>
+    Please, enter a valid username & password. Both input fields may be case
+    sensitive...
+  </р>
+  <form method="POST">
+    <!-- freeze -->
+    {% csrf_token %} {{ form.as_p}}
+    <button type="submit">LogIn</button>
+  </form>
+</div>
+
+{% endblock %}

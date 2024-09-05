@@ -4,7 +4,11 @@
 <div class="home">
   <h1>WOW.url</h1>
   <h3>Streamline your project's links in a flash.</h3>
-  <button>User Account</button>
+  {% if user.is_authenticated %}
+  <a href="{% url 'profile' %}" class="button-link">User Account</a>
+  {% else %}
+  <a href="{% url 'login' %}" class="button-link">User Account</a>
+  {% endif %}
   <img src="{% static 'images/logo.png' %}" alt="Logo" class="home-logo" />
 </div>
 

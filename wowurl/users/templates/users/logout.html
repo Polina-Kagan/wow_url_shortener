@@ -1,0 +1,16 @@
+{% extends 'users/base.html' %}
+<!-- freeze -->
+{% block content %}
+<div class="login">
+  <h1>LogOut Page</h1>
+  <p>
+    You left your account...Bye-bye!
+  </р>
+  <form method="POST">
+    <!-- freeze -->
+    {% csrf_token %} {{ form.as_p}}
+    <a href="{% url 'login' %}"> LogIn again?</a>
+  </form>
+</div>
+
+{% endblock %}

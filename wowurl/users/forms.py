@@ -16,3 +16,12 @@ class UserRegistrationForm(forms.ModelForm):
     class Meta:
         model = User
         fields = ['username', 'email', 'password']
+
+class UserUpdateForm(forms.ModelForm):
+    username = forms.CharField(label="Name:",  help_text="Required field. No more than 150 characters. Only letters, numbers and symbols @/./+/-/_.", widget=forms.TextInput(attrs={'class': 'form-control'}))
+    email = forms.EmailField(label="Email:",  widget=forms.EmailInput(attrs={'class': 'form-control'}))
+
+    class Meta:
+        model = User
+        fields = ['username', 'email']
+        

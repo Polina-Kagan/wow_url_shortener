@@ -1,0 +1,24 @@
+{% extends 'users/base.html' %}
+<!-- freeze -->
+{% block content %}
+<div class="profile">
+  <div class="user-profile">
+    <h1>Profile Page</h1>
+    <p><strong>{{ user.username}}</strong></p>
+    {% if user.email %}
+    <p>{{ user.email }}</p>
+    {% else %}
+    <p>No email address provided</p>
+    {% endif %}
+    <a href="{% url 'exit' %}" class="btn-register">LogOut</a>
+  </div>
+  <div class="update-profile">
+    <form method="POST">
+      <!-- freeze -->
+      {% csrf_token %} {{ updateUserForm.as_p}}
+      <button type="submit">Update Profile</button>
+    </form>
+  </div>
+</div>
+
+{% endblock %}

@@ -8,12 +8,21 @@ body {
   margin: 0;
   padding: 0;
   line-height: 1.6;
+  min-height: 800px;
 }
 
 .container {
   max-width: 1200px;
+  width: 100%;
   margin: 0 auto;
   padding: 0 20px;
+}
+
+.main.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  min-height: 600px;
 }
 
 header {
@@ -104,19 +113,19 @@ footer {
   color: #666;
 }
 
-.home button {
+.button-link {
   font-family: "Baskervville SC", serif;
   background-color: #6482ad;
   color: white;
   padding: 15px 30px;
   font-size: 1.1rem;
   border-radius: 5px;
-  border: #333 1px;
   text-decoration: none;
   transition: background-color 0.3s, color 0.3s;
+  display: inline-block;
 }
 
-.home button:hover {
+.button-link:hover {
   background-color: #ffffff;
   color: #6482ad;
   box-shadow: -8px 11px 13px -2px rgba(34, 60, 80, 0.2);
@@ -159,6 +168,9 @@ REGISTRATION PAGE */
   background-color: #f8f9fa;
   border-radius: 8px;
   box-shadow: -8px 11px 13px -2px rgba(34, 60, 80, 0.2);
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
 }
 
 .registration h1 {
@@ -214,4 +226,161 @@ REGISTRATION PAGE */
 
 .registration form p:last-child a:hover {
   color: #0056b3;
+}
+
+.reg-logo {
+  position: absolute;
+  bottom: 23px;
+  right: 20px;
+  max-width: 30%;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+/* LOGIN PAGE */
+.login {
+  max-width: 400px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  box-shadow: -8px 11px 13px -2px rgba(34, 60, 80, 0.2);
+}
+
+.login h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.login form {
+  display: flex;
+  flex-direction: column;
+}
+
+.login form p {
+  margin-bottom: 15px;
+}
+
+.login form input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+}
+
+.login form button {
+  font-family: "Baskervville SC", serif;
+  padding: 15px 30px;
+  font-size: 1.1rem;
+  background-color: #6482ad;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.login form button:hover {
+  background-color: #ffffff;
+  color: #6482ad;
+  box-shadow: -8px 11px 13px -2px rgba(34, 60, 80, 0.2);
+}
+
+.login form p:last-child {
+  text-align: center;
+  margin-top: 15px;
+}
+
+.login form p:last-child a {
+  text-decoration: none;
+  color: #007bff;
+}
+
+.login form p:last-child a:hover {
+  color: #0056b3;
+}
+
+/* PROFILE PAGE */
+.profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.user-profile {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.user-profile h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #333;
+  text-align: center;
+}
+
+.user-profile p {
+  margin: 5px 0;
+}
+
+.btn-register {
+  display: inline-block;
+  padding: 10px 15px;
+  background-color: #6482ad;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 10px;
+  transition: background-color 0.3s, color 0.3s;
+}
+.btn-register:hover {
+  background-color: #ffffff;
+  color: #6482ad;
+  box-shadow: -8px 11px 13px -2px rgba(34, 60, 80, 0.2);
+}
+
+.update-profile {
+  max-width: 400px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  box-shadow: -8px 11px 13px -2px rgba(34, 60, 80, 0.2);
+}
+
+.update-profile form {
+  display: flex;
+  flex-direction: column;
+}
+
+.update-profile form p {
+  margin-bottom: 15px;
+}
+
+.update-profile form input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+}
+
+.update-profile form button {
+  font-family: "Baskervville SC", serif;
+  padding: 15px 30px;
+  font-size: 1.1rem;
+  background-color: #6482ad;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.update-profile form button:hover {
+  background-color: #ffffff;
+  color: #6482ad;
+  box-shadow: -8px 11px 13px -2px rgba(34, 60, 80, 0.2);
 }
