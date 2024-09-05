@@ -1,0 +1,45 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'users/main.css' %}" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baskervville+SC&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="logo">
+          <a href="{% url 'home' %}">
+            <img src="{% static 'images/logo.png' %}" alt="PolinA" />
+          </a>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="{% url 'home' %}">Home</a></li>
+            <li><a href="{% url 'about' %}">About Us</a></li>
+            <li><a href="#">Login</a></li>
+            <li>
+              <a href="{% url 'registration' %}" class="btn-register"
+                >Registration</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <!-- freeze -->
+    <div class="container">{% block content %} {% endblock %}</div>
+    <!-- end-freeze -->
+    <footer>
+      <div class="container">
+        <p>&copy; 2024 PolinA. All rights reserved.</p>
+      </div>
+    </footer>
+  </body>
+</html>

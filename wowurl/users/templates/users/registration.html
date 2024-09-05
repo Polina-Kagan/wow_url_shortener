@@ -1,0 +1,15 @@
+{% extends 'users/base.html' %}
+<!-- freeze -->
+{% block content %}
+<div class="registration">
+  <h1>Registration Page</h1>
+  <form method="POST">
+    <!-- freeze -->
+    {% csrf_token %} {{ form.as_p}}
+    <button type="submit">Create Profile</button>
+
+    <p>already have a profile? <a href="#">Visit LogIn Page</a></p>
+  </form>
+</div>
+
+{% endblock %}
