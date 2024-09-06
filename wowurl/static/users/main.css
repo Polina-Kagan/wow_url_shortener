@@ -335,17 +335,18 @@ REGISTRATION PAGE */
   margin: 5px 0;
 }
 
-.btn-register {
+.user-profile button {
   display: inline-block;
   padding: 10px 15px;
   background-color: #6482ad;
   color: white;
   text-decoration: none;
   border-radius: 5px;
+  border: none;
   margin-top: 10px;
   transition: background-color 0.3s, color 0.3s;
 }
-.btn-register:hover {
+.user-profile button:hover {
   background-color: #ffffff;
   color: #6482ad;
   box-shadow: -8px 11px 13px -2px rgba(34, 60, 80, 0.2);
@@ -474,3 +475,17 @@ REGISTRATION PAGE */
 .mylinks a:hover {
   text-decoration: underline;
 }
+
+/* SORRY PAGE */
+.sorry {
+  max-width: 400px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #f8f9fa;
+  border-radius: 5px;
+}
+
+/* .sorry h1 {
+  text-align: center;
+  margin-bottom: 20px;
+} */
