@@ -7,7 +7,7 @@ urlpatterns = [
     path('about', views.about, name='about'),
     path('reg', views.register, name='registration'),
     path('login/', authViews.LoginView.as_view(template_name='users/login.html'), name='login'),
-    path('exit/', authViews.LogoutView.as_view(template_name='users/logout.html', next_page='home', http_method_names=['get', 'post']), name='exit'),
+    path('exit/', authViews.LogoutView.as_view(template_name='users/logout.html', next_page='exit', http_method_names=['get', 'post']), name='exit'),
     path('profile/', views.profile, name='profile'),
 
     

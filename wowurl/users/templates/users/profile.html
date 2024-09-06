@@ -10,7 +10,10 @@
     {% else %}
     <p>No email address provided</p>
     {% endif %}
-    <a href="{% url 'exit' %}" class="btn-register">LogOut</a>
+    <form id="logout-form" method="post" action="{% url 'exit' %}">
+      {% csrf_token %}
+      <button type="submit">LogOut</button>
+    </form>
   </div>
   <div class="update-profile">
     <h2>Update User Info:</h2>
