@@ -322,6 +322,11 @@ REGISTRATION PAGE */
   text-align: center;
 }
 
+.update-profile h2 {
+  text-align: center;
+  color: #333;
+}
+
 .user-profile p {
   margin: 5px 0;
 }
@@ -383,4 +388,85 @@ REGISTRATION PAGE */
   background-color: #ffffff;
   color: #6482ad;
   box-shadow: -8px 11px 13px -2px rgba(34, 60, 80, 0.2);
+}
+
+/* CUTTER PAGE */
+.createurl {
+  max-width: 400px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #f8f9fa;
+  border-radius: 5px;
+}
+
+.createurl h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.createurl form input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+}
+
+.createurl form button {
+  margin: 20px 0;
+  width: 100%;
+  font-family: "Baskervville SC", serif;
+  padding: 15px 30px;
+  font-size: 1.1rem;
+  background-color: #6482ad;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.createurl form button:hover {
+  background-color: #ffffff;
+  color: #6482ad;
+  box-shadow: -8px 11px 13px -2px rgba(34, 60, 80, 0.2);
+}
+
+.mylinks {
+  margin-top: 30px;
+}
+
+.mylinks h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.mylinks table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.mylinks th,
+.mylinks td {
+  padding: 10px;
+  text-align: left;
+}
+
+.mylinks th {
+  background-color: #f8f9fa;
+  font-weight: bold;
+  text-align: center;
+}
+
+.mylinks tr:nth-child(even) {
+  background-color: #f8f9fa;
+}
+
+.mylinks a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.mylinks a:hover {
+  text-decoration: underline;
 }

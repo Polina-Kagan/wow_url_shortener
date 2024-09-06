@@ -13,6 +13,7 @@
     <a href="{% url 'exit' %}" class="btn-register">LogOut</a>
   </div>
   <div class="update-profile">
+    <h2>Update User Info:</h2>
     <form method="POST">
       <!-- freeze -->
       {% csrf_token %} {{ updateUserForm.as_p}}

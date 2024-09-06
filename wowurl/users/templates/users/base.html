@@ -28,7 +28,7 @@
             <li><a href="{% url 'about' %}">About Us</a></li>
             {% if user.is_authenticated %}
             <li><a href="{% url 'profile' %}">Profile</a></li>
-            <li><a href="#">URLs</a></li>
+            <li><a href="{% url 'cutter' %}">URLs</a></li>
             {% else %}
             <li><a href="{% url 'login' %}">Login</a></li>
             <li>

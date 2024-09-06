@@ -1,0 +1,40 @@
+{% extends 'users/base.html' %} {% block content %}
+<div class="createurl">
+  <h1>URL Shortener</h1>
+  <form method="POST">
+    {% csrf_token %} {{ form.as_p }}
+    <button type="submit">Create Link!</button>
+  </form>
+</div>
+
+<div class="mylinks">
+  <h2>Your Short Links</h2>
+  {% if user_links %}
+  <table>
+    <thead>
+      <tr>
+        <th>Short URL</th>
+        <th>Original URL</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for link in user_links %}
+      <tr>
+        <td>
+          <a
+            href="{% url 'redirect_short_link' link.short_code %}"
+            target="_blank"
+          >
+            wow/{{ link.short_code }}
+          </a>
+        </td>
+        <td>{{ link.original_url }}</td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+  {% else %}
+  <p>You haven't created any short links yet.</p>
+  {% endif %}
+</div>
+{% endblock %}
