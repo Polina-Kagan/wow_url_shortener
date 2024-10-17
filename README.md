@@ -72,3 +72,4 @@ Run migrations: python manage.py migrate
 Start the Django development server: python manage.py runserver
 
 :warning: Make sure you have Python and Django installed on your system.
+by Polina Kagan
