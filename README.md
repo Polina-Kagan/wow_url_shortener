@@ -7,10 +7,15 @@ This project is a web application for shortening URLs with a user authentication
 ## 🚀 Key Features
 
 **Django-powered Backend**: Utilizing Django's robust features for secure and efficient server-side operations
+
 **Authentication**: User registration and login system implemented with Django's auth system
+
 **Personal Account:** Personalized space for each user, leveraging Django's user model
+
 **URL Shortening**: Creation of short versions of long URL addresses
+
 **Link Management**: View and manage created shortened links
+
 **Redirection**: Automatic redirection to the original URL when using the shortened version
 
 ## 🛠 Technical Details
@@ -50,8 +55,11 @@ The project uses custom CSS styles, providing a unique and consistent appearance
 ## 🔜 Development Plans
 
 :bulb: Adding click statistics for links using Django's database models
+
 :bulb: Implementing a RESTful API using Django REST Framework for integration with other services
+
 :bulb: Improving the mobile version of the site with responsive Django templates
+
 :bulb: Enhancing security features using Django's security middlewares
 
 ## 🤝 Contributing
